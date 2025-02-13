@@ -476,6 +476,12 @@ body {
   color: var(--yellow);
 }
 
+.cfa-section strong {
+  color: #ffffff; /* Couleur blanche */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .matrix-border {
   position: absolute;
   top: 0;
