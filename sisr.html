@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option SISR | Aur3ns Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body class="cyberpunk">
+    <div id="particles"></div>
+    <header class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html">Aur<span>3ns</span></a>
+        </div>
+        <nav class="navbar-nav">
+            <nav class="navbar-nav">
+                <a href="sio.html">Le BTS SIO</a>
+                <a href="sisr.html">Option SISR</a>
+                <a href="skills.html">Compétences</a>
+                <a href="projects.html">Projets</a>
+                <a href="veille.html">La Veille Technologique</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="matrix-border"></div>
+            <h1 class="glitch" data-text="Option SISR">Option SISR</h1>
+          <p class="subtitle">Solutions d'Infrastructure, Systèmes et Réseaux</p>
+          <p>Le BTS SIO, option SISR, forme les étudiants à la conception, l'administration et la sécurisation d'infrastructures réseaux et systèmes. 
+          Cette formation couvre des compétences essentielles telles que la virtualisation, la sécurité réseau, la gestion des serveurs et bien plus encore.</p>
+          <div class="links">
+            <a href="#cfa-section" class="btn">Activités au CFA</a>
+            <a href="#company-section" class="btn">Activités en entreprise</a>
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="cfa-section" class="cfa-section">
+        <div class="container">
+            <h2 class="title">Activités réalisées au CFA</h2>
+            <ul>
+                <li><strong>Création d’un réseau virtuel d'entreprise</strong> :
+                    <ul>
+                        <li>Configuration des switchs cisco, des Vswitch ESXi, des pare-feu PfSense, et des pare-feu Stormshield</li>
+                        <li>Création et gestion de machines virtuelles avec différentes distributions Linux et Windows.</li>
+                        <li>Communication et segmentation du réseaux entre les VMs.</li>
+                    </ul>
+                </li>
+                <li><strong>Installation et configuration de machines Windows 10</strong> :
+                    <ul>
+                        <li>Paramétrage réseau (IP statique, DHCP).</li>
+                        <li>Création et gestion de comptes locaux avec des privilèges personnalisés.</li>
+                        <li>Configuration du pare-feu Windows Defender avec des règles spécifiques pour sécuriser le système.</li>
+                        <li> Installation et configuration de sysmon sur les machines</li>
+                        <li>Scripting et automatisation avec PowerShell.</li>
+                    </ul>
+                </li>
+                <li><strong>Configuration d’un Active Directory sécurisé et durci</strong> :
+                    <ul>
+                        <li>Installation des rôles AD DS et DNS.</li>
+                        <li>Création d’OU (unités d’organisation) pour structurer l’AD.</li>
+                        <li>Déploiement de stratégies de groupe (GPO) pour sécuriser les postes clients et les controleur de domaine.</li>
+                        <li>Désactivation des protocoles vulnérables (SMBv1, NTLMv1...)</li>
+                        <li>Implémentation de LAPS (Local Administrator Password Solution) pour une gestion sécurisée des mots de passe administrateurs locaux.</li>
+                        <li>Sécurisation du RDP : authentification NLA, limitation des connexions, journalisation des accès.</li>
+                    </ul>
+                </li>
+                <li><strong>Hébergement de sites web avec Apache</strong> :
+                    <ul>
+                        <li>Configuration de VirtualHost pour l’hébergement multi-sites.</li>
+                        <li>Création de certificats auto-signés pour activer HTTPS.</li>
+                        <li>Installation et configuration de ProFTPD pour gérer les accès FTP/FTPS.</li>
+                    </ul>
+                <li><strong>Mise en place de la solution de support GLPI</strong>
+                    <ul>
+                        <li>Liaison LDAPS avec le controleur de domaine</li>
+                        <li>Import des utilisateurs du domaine</li>
+                    </ul>
+                </li>
+                <li><strong> Installation et Configuration d'un serveur de sauvegarde Veeam</strong></li>
+                    <ul>
+                        <li>Installation Veeam Backup and Replication</li>
+                        <li>Configuration de sauvegarde (job)</li>
+                    </ul>
+                </li>
+                <li><strong>Haute disponibilité avec HAProxy</strong> :
+                    <ul>
+                        <li>Configuration du load balancer pour équilibrer les charges entre plusieurs serveurs.</li>
+                        <li>Mise en place d’ACL pour filtrer et rediriger le trafic.</li>
+                    </ul>
+                </li>
+                <li><strong>Centralisation des logs et analyse avec un SIEM</strong> :
+                    <ul>
+                        <li>Configuration d’un serveur Syslog pour la collecte des journaux.</li>
+                        <li>Analyse des logs et détection d’incidents.</li>
+                    </ul>
+                </li>
+                <li><strong>Conteneurisation avec Docker</strong> :
+                    <ul>
+                        <li>Création de conteneurs pour isoler les services.</li>
+                        <li>Déploiement et gestion d’applications dans des environnements conteneurisés.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="company-section" class="company-section">
+        <div class="container">
+            <h2 class="title">Activités réalisées en entreprise</h2>
+            <ul>
+                <li><strong>Sécurité réseau avec Stormshield</strong> :
+                    <ul>
+                        <li>Installation et configuration de pare-feux Stormshield.</li>
+                        <li>Création de règles de filtrage pour protéger les services internes.</li>
+                        <li>Analyse des journaux de connexion et durcissement des politiques de sécurité.</li>
+                    </ul>
+                </li>
+                <li><strong>Gestion de switches industriels Moxa et Hirschmann</strong> :
+                    <ul>
+                        <li>Configuration Réseau VLAN</li>
+                        <li>Configuration VLAN, et port-security</li>
+                        <li>Configuration des accès</li>
+                        <li>Configuration SNMP</li>
+                        <li>Configuration de la redondance avec la technologie Moxa "Turbo Chain" et "Turbo Ring"</li>
+                    </ul>
+                </li>
+                <li><strong>Administration de services Active Directory</strong> :
+                    <ul>
+                        <li>Gestion des utilisateurs et groupes dans l’AD.</li>
+                        <li>Application des politiques de sécurité (GPO) pour les postes utilisateurs.</li>
+                        <li>Déploiement de LAPS pour renforcer la sécurité des comptes administrateurs locaux.</li>
+                    </ul>
+                </li>
+                <li><strong>Mise en place du logiciel de supervision Panorama</strong> :
+                    <ul>
+                        <li>Installation des drivers requis au fonctionnement de Panorama</li>
+                        <li>Mise à jour applicative et de sécurité</li>
+                    </ul>
+                </li>
+                <li><strong> Génération de certificats OpenSSL</strong> :
+                    <ul>
+                        <li>Génération de certificats pour une PKI</li>
+                        <li>Fusion de clé et de certificats pour obtenir une extension de certificat compatibles avec les switchs industriels</li>
+                    </ul>
+                <li><strong>Configuration et Supervision grace à PRTG</strong> :
+                    <ul>
+                        <li>Ajout des Appareils du réseau</li>
+                        <li>Ajout et Configuration des capteurs SNMP</li>
+                        <li>Ajout et Configuration des capteurs WMI</li>
+                        <li>Création de schéma (map) de réseau facilitant la visualisation</li>
+                        <li>Liaison LDAPS</li>
+                    </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 | Created by Aur3ns, ex BlackBird63030</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
