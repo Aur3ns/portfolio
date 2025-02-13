@@ -93,28 +93,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     projects.forEach(createProjectCard);
   }
 
-  // Fonction pour masquer le chemin dans la barre d'adresse
+  // Masquer le chemin dans la barre d'adresse
   const hidePath = () => {
     const currentUrl = window.location.href;
     const baseUrl = currentUrl.split("/").slice(0, 3).join("/"); // Conserver seulement le domaine
     window.history.replaceState(null, null, baseUrl);
   };
 
-  hidePath(); // Masquer l'URL au chargement
-
-  // Gérer les clics sur les liens internes pour masquer l'URL
-  document.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", (event) => {
-      if (!link.href.includes(window.location.origin)) return; // Ignore les liens externes
-      event.preventDefault();
-      const targetUrl = link.href;
-      window.history.pushState(null, null, targetUrl);
-      hidePath(); // Masquer l'URL après navigation
-    });
-  });
-
-  // Gérer le bouton "Précédent"
-  window.onpopstate = () => {
-    hidePath(); // Remettre l'URL masquée
-  };
+  hidePath();
 });
