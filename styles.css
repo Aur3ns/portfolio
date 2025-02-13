@@ -435,6 +435,12 @@ body {
   overflow: hidden;
 }
 
+.cfa-section strong {
+  color: #ffffff; /* Couleur blanche */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .cfa-section h1, .company-section h1 {
   font-size: 2.5rem;
   color: var(--yellow);
@@ -476,11 +482,6 @@ body {
   color: var(--yellow);
 }
 
-.cfa-section strong {
-  color: #ffffff; /* Couleur blanche */
-  text-decoration: underline;
-  font-weight: bold;
-}
 
 .matrix-border {
   position: absolute;
