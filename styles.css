@@ -658,58 +658,58 @@ body {
 
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Taille plus équilibrée */
-  gap: 1.5rem; /* Espacement réduit pour une meilleure cohérence */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cartes plus petites */
+  gap: 1rem; /* Moins d'espace entre les cartes */
   justify-items: center;
 }
 
 .cert-card {
-  background: rgba(15, 20, 30, 0.95); /* Fond légèrement transparent pour un effet moderne */
-  border: 2px solid var(--blue); /* Bordure fine et élégante */
-  border-radius: 12px; /* Coins arrondis */
-  padding: 1.5rem; /* Espacement interne pour une bonne lisibilité */
-  width: 280px; /* Taille fixe pour éviter les différences */
-  height: 400px; /* Hauteur standardisée pour une uniformité parfaite */
+  background: rgba(15, 20, 30, 0.95); /* Fond sombre */
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+  padding: 1rem; /* Moins de padding pour réduire la hauteur */
+  width: 250px; /* Réduction de la largeur */
+  height: 350px; /* Réduction de la hauteur */
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
   transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Uniformise l'espacement interne */
+  justify-content: space-between; /* Uniformisation */
 }
 
 .cert-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--blue), 0 0 25px var(--green);
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px var(--blue), 0 0 15px var(--green);
 }
 
 .cert-card img {
-  max-width: 100px; /* Taille uniforme pour toutes les images */
-  max-height: 100px;
+  max-width: 80px; /* Image plus petite */
+  max-height: 80px;
   object-fit: contain;
   background: rgba(255, 255, 255, 0.05);
-  padding: 8px;
-  border-radius: 10px;
+  padding: 6px;
+  border-radius: 8px;
 }
 
 .cert-card h3 {
-  font-size: 1.5rem; /* Titre plus visible */
+  font-size: 1.3rem; /* Titre légèrement réduit */
   color: var(--yellow);
-  margin-top: 1rem;
+  margin: 0.5rem 0; /* Moins d’espace autour */
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .cert-card p {
-  font-size: 1.2rem; /* Taille de police augmentée pour le confort de lecture */
+  font-size: 1rem; /* Texte plus petit */
   color: var(--text-color);
-  margin: 0.5rem 0;
-  line-height: 1.4;
+  margin: 0.2rem 0; /* Espacement minimal */
+  line-height: 1.2; /* Texte plus compact */
 }
 
 .cert-card strong {
-  font-size: 1.3rem; /* Rend les certifications plus lisibles */
+  font-size: 1.1rem; /* Texte moins imposant */
   color: var(--green);
   text-decoration: underline;
 }
