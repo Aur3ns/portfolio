@@ -730,11 +730,6 @@ body {
   height: 100%;
 }
 
-/* Animation subtile au survol */
-.cert-card:hover strong {
-  color: var(--yellow);
-}
-
 /* Footer */
 .footer {
   background: #0d1117;
