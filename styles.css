@@ -668,8 +668,8 @@ body {
   border: 2px solid var(--blue);
   border-radius: 10px;
   padding: 1rem; /* Moins de padding pour réduire la hauteur */
-  width: 250px; /* Réduction de la largeur */
-  height: 350px; /* Réduction de la hauteur */
+  width: 200px; /* Réduction de la largeur */
+  height: 300px; /* Réduction de la hauteur */
   text-align: center;
   box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
   transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -685,8 +685,8 @@ body {
 }
 
 .cert-card img {
-  max-width: 80px; /* Image plus petite */
-  max-height: 80px;
+  max-width: 100px; /* Image plus petite */
+  max-height: 100px;
   object-fit: contain;
   background: rgba(255, 255, 255, 0.05);
   padding: 6px;
