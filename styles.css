@@ -1,12 +1,12 @@
 /* Définition des couleurs principales */
 :root {
-  --yellow: #fcec03;
-  --green: #00ff9c;
-  --pink: #ff007f;
-  --blue: #03fce3;
+  --yellow: #ffd700; /* Or au lieu de jaune fluo */
+  --green: #00cc80; /* Vert moins agressif */
+  --pink: #cc0066; /* Magenta atténué */
+  --blue: #00cccc; /* Bleu plus doux */
   --black: #1a1a1a;
-  --bg-color: #081b25;
-  --text-color: #ffffff;
+  --bg-color: #101820; /* Bleu nuit plus doux */
+  --text-color: #e0e0e0; /* Blanc légèrement gris pour éviter l’éblouissement */
 }
 
 /* Style global */
@@ -20,6 +20,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  line-height: 1.6; /* Meilleure lisibilité */
+}
+
+li strong {
+  color: #f0f0f0; /* Blanc légèrement adouci */
 }
 
 /* Barre de navigation */
@@ -33,10 +38,13 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: var(--black);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-brand a {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: var(--yellow);
   text-decoration: none;
 }
@@ -110,19 +118,19 @@ body {
   padding: 2rem;
   border: 2px solid var(--blue);
   border-radius: 15px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.75);
   overflow: hidden;
-  box-shadow: 0 0 10px var(--blue);
+  box-shadow: 0 0 8px var(--blue);
   margin-bottom: 2rem;
 }
 
 .hero-content h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--yellow);
-  text-shadow: 0 0 5px var(--yellow), 0 0 10px rgba(255, 255, 0, 0.8);
+  text-shadow: 0 0 4px var(--yellow), 0 0 10px rgba(255, 255, 0, 0.8);
   margin-bottom: 1rem;
   text-transform: uppercase;
-  animation: glitch-text 1.5s infinite;
+  animation: glitch-text ease-in-out infinite alternate;
   letter-spacing: 3px;
 }
 
@@ -198,14 +206,8 @@ body {
 }
 
 @keyframes matrix-rain {
-  0% {
-    transform: translateY(-10%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(110%);
-    opacity: 0;
-  }
+  0% { transform: translateY(-10%); opacity: 0.8; }
+  100% { transform: translateY(110%); opacity: 0; }
 }
 
 /* Bouton */
@@ -231,11 +233,11 @@ body {
 
 /* Footer */
 .footer {
-  background: #0d1117;
+  background: #14181f;
   color: var(--text-color);
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   position: relative;
   bottom: 0;
   width: 100%;
