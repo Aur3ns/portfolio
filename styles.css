@@ -750,5 +750,5 @@ body {
 }
 
 li strong {
-  color: hwb(24 86% 12% / 0.705); /* Blanc légèrement adouci */
+  color: #d0d0d0; /* Blanc légèrement grisé pour moins d'agressivité */
 }
