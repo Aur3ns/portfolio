@@ -750,6 +750,7 @@ body {
 }
 
 li strong {
-  color: #c8c8c8; /* Blanc grisé légèrement atténué */
+  color: #c8c8c8;
+  text-decoration: underline;
 }
 
