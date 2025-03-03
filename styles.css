@@ -533,103 +533,13 @@ body::before {
   }
 }
 
-/* Reset général */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'VT323', monospace;
-}
-
-/* Couleurs personnalisées */
-:root {
-  --blue: #00ccff;
-  --pink: #ff00ff;
-  --yellow: #ffcc00;
-  --green: #00ff00;
-  --text-color: #ffffff;
-  --background-dark: rgba(0, 0, 0, 0.8);
-}
-
-/* Corps de la page */
-body.cyberpunk {
-  background: #050505;
-  color: var(--text-color);
-  overflow-x: hidden;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: black;
-  border-bottom: 2px solid var(--blue);
-}
-
-.navbar-brand a {
-  font-size: 2rem;
-  color: var(--blue);
-  text-decoration: none;
-}
-
-.navbar-brand span {
-  color: var(--pink);
-}
-
-.navbar-nav a {
-  margin: 0 10px;
-  color: var(--yellow);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.navbar-nav a:hover {
-  color: var(--pink);
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  color: var(--yellow);
-  text-shadow: 0 0 10px var(--pink), 0 0 20px var(--blue);
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  color: var(--blue);
-}
-
-.links {
-  margin-top: 1rem;
-}
-
-.btn {
-  background: var(--pink);
-  color: black;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: var(--yellow);
-}
-
-/* Sections CFA et Entreprise */
+/* CFA Section and Company Section */
 .cfa-section, .company-section {
   padding: 3rem 2rem;
   max-width: 1000px;
   margin: 2rem auto;
   margin-top: 7rem;
-  background: var(--background-dark);
+  background: rgba(0, 0, 0, 0.8);
   border: 2px solid var(--blue);
   border-radius: 15px;
   box-shadow: 0 0 10px var(--blue);
@@ -637,18 +547,30 @@ body.cyberpunk {
   overflow: hidden;
 }
 
-.cfa-section strong, .company-section strong {
-  color: #ffffff;
+.cfa-section strong {
+  color: #ffffff; /* Couleur blanche */
   text-decoration: underline;
   font-weight: bold;
+}
+
+.cfa-section h1, .company-section h1 {
+  font-size: 2.5rem;
+  color: var(--yellow);
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .cfa-section h2, .company-section h2 {
   font-size: 2rem;
   color: var(--pink);
   margin-top: 1.5rem;
-  text-align: center;
-  text-shadow: 0 0 5px var(--yellow);
+}
+
+.cfa-section p, .company-section p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 .cfa-section ul, .company-section ul {
@@ -662,7 +584,6 @@ body.cyberpunk {
   margin-bottom: 0.5rem;
 }
 
-/* Liens */
 .cfa-section a, .company-section a {
   color: var(--blue);
   text-decoration: underline;
@@ -673,7 +594,7 @@ body.cyberpunk {
   color: var(--yellow);
 }
 
-/* Matrix Effect */
+
 .matrix-border {
   position: absolute;
   top: 0;
@@ -691,7 +612,7 @@ body.cyberpunk {
   color: rgba(0, 255, 0, 1);
   font-family: monospace;
   animation: matrix-fall 4s linear infinite;
-  opacity: 1;
+  opacity: 15;
   filter: brightness(10);
   text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
 }
@@ -706,35 +627,6 @@ body.cyberpunk {
     opacity: 0;
   }
 }
-
-/* Images et Logos */
-.illustration {
-  display: block;
-  max-width: 150px;
-  height: auto;
-  margin: 10px auto;
-  filter: drop-shadow(0px 0px 10px var(--blue));
-  transition: transform 0.3s ease-in-out;
-}
-
-.illustration:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0px 0px 20px var(--yellow));
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 2rem 0;
-  background: black;
-  border-top: 2px solid var(--blue);
-}
-
-.footer p {
-  color: var(--text-color);
-  font-size: 1rem;
-}
-
 
 /* projects section */
 .projects-section {
