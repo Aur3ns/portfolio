@@ -677,6 +677,14 @@ body::before {
   margin-bottom: 1rem;
 }
 
+.project-card img {
+  width: 100%; /* L'image prend toute la largeur du cadre */
+  height: auto; /* Hauteur ajustée proportionnellement */
+  max-height: 250px; /* Limite la hauteur pour éviter les débordements */
+  object-fit: contain; /* Garantit que l'image reste entière sans être rognée */
+  border-radius: 10px; /* Coins arrondis pour l'esthétique */
+}
+
 .project-link {
   display: inline-block;
   padding: 0.5rem 1rem;
