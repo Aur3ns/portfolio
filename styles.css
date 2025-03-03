@@ -10,7 +10,6 @@
 }
 
 /* Style global */
-/* Style global - Optimisé */
 body {
   font-family: 'VT323', monospace;
   background-color: var(--bg-color);
@@ -48,8 +47,8 @@ body::before {
 
 .navbar-nav {
   display: flex;
-  gap: 1rem;
-  margin-right: auto; /* Évite le centrage décalé */
+  gap: 1.5rem;
+  margin-left: auto; /* Évite le centrage décalé */
 }
 
 .navbar-brand a {
