@@ -533,136 +533,68 @@ body::before {
   }
 }
 
-/* Conteneur global pour les cartes (sections CFA et Entreprise) */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  width: 90%;
-  max-width: 1200px;
+/* CFA Section and Company Section */
+.cfa-section, .company-section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
   margin: 2rem auto;
-}
-
-/* Style de chaque carte */
-.card {
-  background: rgba(0, 0, 0, 0.85);
+  margin-top: 7rem;
+  background: rgba(0, 0, 0, 0.8);
   border: 2px solid var(--blue);
   border-radius: 15px;
   box-shadow: 0 0 10px var(--blue);
-  padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px var(--yellow), 0 0 30px var(--blue);
+.cfa-section strong {
+  color: #ffffff; /* Couleur blanche */
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-/* En-tête de la carte avec illustration */
-.card-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.cfa-section h1, .company-section h1 {
+  font-size: 2.5rem;
+  color: var(--yellow);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cfa-section h2, .company-section h2 {
+  font-size: 2rem;
+  color: var(--pink);
+  margin-top: 1.5rem;
+}
+
+.cfa-section p, .company-section p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.8;
   margin-bottom: 1rem;
 }
 
-.card-header img.logo {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
+.cfa-section ul, .company-section ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.card-header h3 {
-  font-size: 1.8rem;
-  color: var(--yellow);
-  margin: 0;
-}
-
-/* Corps de la carte */
-.card-body {
+.cfa-section ul li, .company-section ul li {
   font-size: 1.1rem;
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-.card-body ul {
-  padding-left: 1rem;
-  margin: 1rem 0;
-}
-
-.card-body li {
-  margin-bottom: 0.5rem;
   color: var(--green);
+  margin-bottom: 0.5rem;
 }
 
-/* Exemple de carte avec illustration pour chaque équipement */
-.equipment-card .card-header h3 {
-  font-size: 1.6rem;
-}
-
-.equipment-card img.logo {
-  width: 40px;
-  height: 40px;
-}
-
-/* Footer */
-.footer {
-  background: rgba(15, 15, 20, 0.95);
-  color: var(--text-color);
-  padding: 1.5rem 1rem;
-  text-align: center;
-  font-size: 1.1rem;
-  border-top: 2px solid var(--blue);
-}
-
-.footer p {
-  margin: 0;
-  font-family: 'VT323', monospace;
-  color: #cccccc;
-}
-
-.footer a {
+.cfa-section a, .company-section a {
   color: var(--blue);
-  text-decoration: none;
+  text-decoration: underline;
   transition: color 0.3s ease;
 }
 
-.footer a:hover {
+.cfa-section a:hover, .company-section a:hover {
   color: var(--yellow);
 }
 
-/* Adaptations pour les sections spécifiques (CFA et Entreprise) */
-.cfa-section,
-.company-section {
-  margin-top: 7rem;
-  padding: 2rem 0;
-}
 
-/* Titres des sections */
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  color: var(--yellow);
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px var(--yellow);
-}
-
-/* Illustrations générales */
-.illustration {
-  display: block;
-  max-width: 150px;
-  height: auto;
-  margin: 0.5rem auto;
-  filter: drop-shadow(0 0 10px var(--blue));
-  transition: transform 0.3s ease-in-out;
-}
-
-.illustration:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 20px var(--yellow));
-}
-
-/* Effets Matrix (optionnel, pour le fond ou bordures) */
 .matrix-border {
   position: absolute;
   top: 0;
@@ -680,7 +612,7 @@ body::before {
   color: rgba(0, 255, 0, 1);
   font-family: monospace;
   animation: matrix-fall 4s linear infinite;
-  opacity: 0.9;
+  opacity: 15;
   filter: brightness(10);
   text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
 }
@@ -694,6 +626,21 @@ body::before {
     transform: translateY(100%);
     opacity: 0;
   }
+}
+
+/* Images et Logos */
+.illustration {
+  display: block;
+  max-width: 150px;
+  height: auto;
+  margin: 10px auto;
+  filter: drop-shadow(0px 0px 10px var(--blue));
+  transition: transform 0.3s ease-in-out;
+}
+
+.illustration:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 20px var(--yellow));
 }
 
 /* projects section */
