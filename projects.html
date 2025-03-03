@@ -25,35 +25,30 @@
         </nav>
     </header>
 
-    <!-- Introduction -->
-    <section class="intro-section">
-        <h1>Mes Projets Professionnels</h1>
-        <p class="intro">
-            Cette section présente mes projets réalisés dans le cadre du BTS SIO option SISR. 
-            Ces projets ont été conçus pour répondre aux besoins d’une entreprise fictive <strong>NorthStar</strong>, 
-            qui souhaite moderniser et sécuriser son infrastructure IT.
-        </p>
-    </section>
-
     <!-- Section Projets Professionnels -->
     <section class="projects-section">
+        <h1 class="section-title">Mes Projets Professionnels</h1>
+        <div class="matrix-border"></div>
+        
         <div class="projects-container">
             
             <!-- Projet Active Directory sous Linux -->
             <div class="project-card">
+                <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1adefuaw7mdmohtt9v4q.jpg" 
+                     alt="Logo Samba AD" class="project-logo">
                 <h2>🔒 Déploiement d'un Active Directory sous Linux</h2>
                 <p><strong>📌 Contexte :</strong> L’entreprise <em>NorthStar</em> souhaitait un serveur AD sécurisé sous Linux.</p>
-                <p><strong>🎯 Objectif :</strong> Installer un **Active Directory** sous Linux avec **Samba-AD-DC**.</p>
+                <p><strong>🎯 Objectif :</strong> Mettre en place un **Active Directory** sous Linux avec **Samba-AD-DC** pour gérer les utilisateurs et les permissions.</p>
                 <p><strong>🔧 Actions :</strong></p>
                 <ul class="skills-list">
-                    <li>Installation et configuration de **Samba-AD-DC**</li>
-                    <li>Intégration des machines Windows et Linux au domaine</li>
-                    <li>Mise en place des **GPOs (Group Policy Object)**</li>
-                    <li>Automatisation de la gestion des utilisateurs avec **scripts Bash**</li>
+                    <li>Installation et configuration de **Samba-AD-DC** sur Debian</li>
+                    <li>Intégration des machines Windows et Linux dans le domaine</li>
+                    <li>Configuration des **GPOs (Group Policy Object)** pour les restrictions et accès</li>
+                    <li>Automatisation de la gestion des utilisateurs avec **scripts Bash et Python**</li>
                 </ul>
                 <p><strong>🛠️ Outils :</strong> Samba-AD-DC, Debian, Windows Client, RSAT</p>
 
-                <!-- Démonstration avec image réelle -->
+                <!-- Image de démonstration -->
                 <img src="https://www.malekal.com/wp-content/uploads/2023/01/Configurer-samba-controlleur-domaine-ef7f.jpg" 
                      alt="Exemple de configuration Samba AD" class="demo-img">
                 
@@ -62,19 +57,21 @@
 
             <!-- Projet SIEM Wazuh -->
             <div class="project-card">
+                <img src="https://kings-guard.com/wp-content/uploads/2025/01/wazuh-standard-featured-picture.png" 
+                     alt="Logo Wazuh" class="project-logo">
                 <h2>🛡️ Mise en place d’un SIEM avec Wazuh</h2>
                 <p><strong>📌 Contexte :</strong> Surveillance et sécurisation du réseau de <em>NorthStar</em>.</p>
-                <p><strong>🎯 Objectif :</strong> Déployer un **SIEM Wazuh** pour analyser les logs et détecter les attaques.</p>
+                <p><strong>🎯 Objectif :</strong> Déployer un **SIEM Wazuh** pour collecter et analyser les logs afin de détecter les menaces en temps réel.</p>
                 <p><strong>🔧 Actions :</strong></p>
                 <ul class="skills-list">
-                    <li>Installation et configuration de **Wazuh Manager**</li>
-                    <li>Déploiement d’agents sur postes et serveurs</li>
-                    <li>Connexion avec **Elasticsearch et Kibana**</li>
-                    <li>Configuration des alertes et règles de sécurité</li>
+                    <li>Installation et configuration de **Wazuh Manager** sur un serveur Debian</li>
+                    <li>Déploiement d’agents sur postes Windows/Linux pour la collecte des logs</li>
+                    <li>Connexion avec **Elasticsearch et Kibana** pour la visualisation</li>
+                    <li>Création de règles de détection d’intrusion et configuration des alertes</li>
                 </ul>
                 <p><strong>🛠️ Outils :</strong> Wazuh, Elasticsearch, Kibana, Linux</p>
 
-                <!-- Démonstration avec image réelle -->
+                <!-- Image de démonstration -->
                 <img src="https://wazuh.com/wp-content/themes/wazuh-v3/assets/images/home/siem-dashboard.png?ver=1735664783069" 
                      alt="Exemple d'alerte Wazuh" class="demo-img">
 
@@ -87,23 +84,10 @@
     <!-- Section Projets GitHub -->
     <section class="projects-section">
         <h1 class="section-title">Mes Projets GitHub</h1>
+        <div class="matrix-border"></div>
         <div class="projects-container" id="projects-container">
             <!-- Projets GitHub seront insérés ici via JS -->
         </div>
-    </section>
-
-    <!-- Conclusion -->
-    <section class="conclusion">
-        <h2>📌 Conclusion et Perspectives</h2>
-        <p>
-            Ces projets m’ont permis de développer mes compétences en administration système et cybersécurité. 
-            Le déploiement d’un <strong>Active Directory sous Linux</strong> m’a appris la gestion centralisée des utilisateurs, 
-            tandis que la mise en place d’un <strong>SIEM Wazuh</strong> m’a familiarisé avec l’analyse des logs et la détection d’attaques.
-        </p>
-        <p>
-            Pour aller plus loin, j’aimerais approfondir les solutions de **monitoring avancé**, tester des outils comme 
-            <strong>Zeek (ex-Bro) ou Suricata</strong>, et automatiser encore plus les tâches avec **Ansible**.
-        </p>
     </section>
 
     <!-- Footer -->
