@@ -37,7 +37,7 @@ body::before {
   align-items: center;
   width: 100%;  /* Assure que la navbar prend toute la largeur */
   background: var(--black);
-  padding: 1rem 2rem;  /* Réduit la hauteur */
+  padding: 0.8rem 1.8rem;  /* Réduit la hauteur */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: fixed;  /* Fixe la navbar en haut */
   top: 0;
