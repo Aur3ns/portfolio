@@ -16,6 +16,7 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
+  align-items: center;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -77,6 +78,13 @@ body {
 
 .navbar-nav a:hover::after {
   width: 100%;
+}
+
+/* S'assurer que tout est bien centré et ne dépasse pas */
+.hero, .realisation-e5, .footer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;  /* Centre horizontalement */
 }
 
 /* Section héroïque avec l'effet Matrix */
