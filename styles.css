@@ -48,7 +48,7 @@ body::before {
 .navbar-nav {
   display: flex;
   gap: 1.5rem;
-  margin-left: auto; /* Évite le centrage décalé */
+/* Évite le centrage décalé */
 }
 
 .navbar-brand a {
