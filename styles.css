@@ -32,47 +32,33 @@ body::before {
 }
 
 /* Barre de navigation */
+/* Barre de navigation */
 .navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
   background: var(--black);
   padding: 1rem 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.navbar-nav {
-  display: flex;
-  gap: 1.5rem;
-  flex-grow: 1;
-  justify-content: flex-start; /* Alignement total à gauche */
-}
-
-/* Alignement du logo */
-.navbar-brand {
-  margin-right: 20px; /* Ajoute un espacement entre le logo et les liens */
-}
-
-.navbar-nav a {
+.navbar-brand a {
+  font-size: 2.5rem;
   color: var(--yellow);
   text-decoration: none;
-  font-size: 1.5rem;
-  position: relative;
-  transition: color 0.3s ease;
-  padding: 0 10px; /* Réduit l’espacement interne */
-}
-
-.navbar-nav a:first-child {
-  margin-left: 0; /* Empêche un décalage du premier lien */
 }
 
 .navbar-brand span {
   color: var(--pink);
 }
 
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem;
+}
 
 .navbar-nav a {
   color: var(--yellow);
