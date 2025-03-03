@@ -32,6 +32,7 @@ body::before {
 }
 
 /* Barre de navigation */
+/* Barre de navigation */
 .navbar {
   display: flex;
   align-items: center;
@@ -45,27 +46,18 @@ body::before {
   z-index: 1000;
 }
 
-/* Alignement du logo */
+/* Correction du logo */
 .navbar-brand {
-  margin-right: 20px; /* Réduit l’espace entre le logo et les liens */
+  margin-right: 40px; /* Ajoute un espace entre le logo et le menu */
+  flex-shrink: 0; /* Empêche que le logo soit trop compressé */
 }
 
-.navbar-brand a {
-  font-size: 2.2rem;
-  color: var(--yellow);
-  text-decoration: none;
-}
-
-.navbar-brand span {
-  color: var(--pink);
-}
-
-/* Conteneur des liens de navigation */
+/* Correction de l'alignement du menu */
 .navbar-nav {
   display: flex;
-  gap: 1rem;
+  gap: 1rem; /* Réduction de l'espace entre les liens */
   flex-grow: 1;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Alignement à gauche */
 }
 
 /* Liens de navigation */
@@ -73,9 +65,8 @@ body::before {
   color: var(--yellow);
   text-decoration: none;
   font-size: 1.5rem;
-  position: relative;
   transition: color 0.3s ease;
-  padding: 0 10px; /* Réduit l’espacement interne */
+  padding: 0 5px; /* Réduit encore l’espacement */
 }
 
 .navbar-nav a:first-child {
@@ -99,6 +90,7 @@ body::before {
 .navbar-nav a:hover::after {
   width: 100%;
 }
+
 
 
 /* S'assurer que tout est bien centré et ne dépasse pas */
