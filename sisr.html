@@ -64,14 +64,14 @@
               <li>
                 <strong>Pare-feu PfSense et Stormshield :</strong>
                 <ul>
-                  <li>Installation et configuration en tant que passerelles de sécurité pour filtrer le trafic entrant et sortant.</li>
-                  <li>Mise en place de règles de filtrage spécifiques pour autoriser ou bloquer certains flux de données.</li>
+                  <li>Installation et configuration en tant que passerelles de réseau afin de filtrer le trafic entrant et sortant.</li>
+                  <li>Mise en place de règles de filtrage spécifiques pour autoriser ou bloquer certains flux de données de sources différentes (Serveurs, postes, Internet, etc...)</li>
                 </ul>
               </li>
               <li>
                 <strong>Création et gestion de machines virtuelles :</strong>
                 <ul>
-                  <li>Déploiement de systèmes d’exploitation Linux (Ubuntu, CentOS, Debian) et Windows (Windows Server, Windows 10) pour simuler divers environnements.</li>
+                  <li>Déploiement de systèmes d’exploitation Linux (Ubuntu,FreeBSD Debian) et Windows (Windows Server, Windows 10).</li>
                   <li>Gestion des ressources et segmentation du réseau via VLAN et sous-réseaux pour garantir une communication sécurisée entre les VM.</li>
                 </ul>
               </li>
@@ -123,7 +123,7 @@
           <li>
             <strong>Mise en place de la solution de support GLPI</strong> :
             <ul>
-              <li>Liaison LDAPS avec le contrôleur de domaine pour une intégration sécurisée.</li>
+              <li>Liaison LDAP avec le contrôleur de domaine pour une intégration sécurisée.</li>
               <li>Import des utilisateurs du domaine afin de simplifier la gestion des tickets et du support IT.</li>
             </ul>
           </li>
@@ -139,13 +139,6 @@
             <ul>
               <li>Configuration du load balancer pour répartir les charges entre plusieurs serveurs.</li>
               <li>Mise en place d’ACL pour filtrer et rediriger le trafic en fonction de critères définis.</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Centralisation des logs et analyse avec un SIEM</strong> :
-            <ul>
-              <li>Configuration d’un serveur Syslog pour collecter les journaux de tous les équipements et applications.</li>
-              <li>Analyse des logs via une plateforme SIEM pour détecter les incidents et déclencher des alertes.</li>
             </ul>
           </li>
           <li>
@@ -195,8 +188,8 @@
         <strong>Administration de services Active Directory</strong> :
         <ul>
           <li>Gestion des utilisateurs et groupes dans l’AD (création, mise à jour, suppression).</li>
-          <li>Application des politiques de sécurité via GPO pour contrôler l’accès aux ressources.</li>
-          <li>Déploiement de LAPS pour renforcer la sécurité des comptes administrateurs locaux.</li>
+          <li>Application des politiques de sécurité via GPO pour contrôler l’accès aux serveurs.</li>
+          <li>Déploiement de LDAPS pour renforcer la sécurité des switchs</li>
         </ul>
       </li>
       <li>
