@@ -26,7 +26,7 @@ body {
 
 /* Empêcher la navbar de cacher le contenu */
 body::before {
-  content: "";
+  content: none;
   display: block;
   height: 70px; /* Ajuste cette valeur selon la hauteur de ta navbar */
 }
