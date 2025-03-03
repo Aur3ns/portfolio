@@ -37,7 +37,9 @@ body::before {
   align-items: center;
   width: 100%;
   background: var(--black);
-  padding: 1rem 2rem;
+  /* Réduire la marge à gauche et à droite si besoin */
+  /* Par exemple, passer de padding: 1rem 2rem; à : */
+  padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
@@ -47,7 +49,8 @@ body::before {
 
 /* Alignement du logo */
 .navbar-brand {
-  margin-right: 20px; /* Réduit l’espace entre le logo et les liens */
+  /* Supprime ou réduit la marge entre le logo et les liens */
+  margin-right: 0; 
 }
 
 .navbar-brand a {
@@ -63,8 +66,10 @@ body::before {
 /* Conteneur des liens de navigation */
 .navbar-nav {
   display: flex;
-  gap: 1rem;
+  /* Réduire le gap pour rapprocher les liens entre eux */
+  gap: 0.5rem;
   flex-grow: 1;
+  /* Justification à gauche */
   justify-content: flex-start;
 }
 
@@ -75,11 +80,11 @@ body::before {
   font-size: 1.5rem;
   position: relative;
   transition: color 0.3s ease;
-  padding: 0 10px; /* Réduit l’espacement interne */
+  padding: 0 10px; /* Ajustez si vous voulez moins d’espace interne */
 }
 
 .navbar-nav a:first-child {
-  margin-left: 0; /* Empêche un décalage du premier lien */
+  margin-left: 0; /* Évite le décalage du premier lien */
 }
 
 /* Effet hover */
@@ -100,13 +105,13 @@ body::before {
   width: 100%;
 }
 
-
 /* S'assurer que tout est bien centré et ne dépasse pas */
 .hero, .realisation-e5, .footer {
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;  /* Centre horizontalement */
+  margin: 0 auto; /* Centre horizontalement les sections principales */
 }
+
 
 /* Section héroïque avec l'effet Matrix */
 .hero {
