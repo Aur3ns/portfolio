@@ -117,6 +117,75 @@ body {
   text-align: justify;
 }
 
+/* Section Réalisations E5 */
+.realisation-e5 {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 15px;
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 15px var(--blue);
+}
+
+.realisation-e5 h2 {
+  font-size: 2.5rem;
+  color: var(--yellow);
+  text-shadow: 0 0 10px var(--yellow);
+  margin-bottom: 1rem;
+}
+
+.realisation-e5 p {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.projet-e5 {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid var(--green);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px var(--green);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-e5:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--yellow), 0 0 30px var(--blue);
+}
+
+.projet-e5 h3 {
+  font-size: 1.8rem;
+  color: var(--pink);
+}
+
+.projet-e5 p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Boutons de redirection vers les projets */
+.projet-e5 .btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.3rem;
+  color: var(--black);
+  background: var(--green);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-e5 .btn:hover {
+  background: var(--yellow);
+  box-shadow: 0 0 15px var(--yellow), 0 0 25px var(--blue);
+}
+
+
 @keyframes glitch-effect {
   0% { transform: translate(0); }
   20% { transform: translate(-2px, 2px); }
@@ -732,18 +801,17 @@ body {
 
 /* Footer */
 .footer {
-  background: #0d1117;
+  background: rgba(15, 15, 20, 0.95);
   color: var(--text-color);
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-top: 2px solid var(--blue);
 }
 
 .footer p {
   margin: 0;
   font-family: 'VT323', monospace;
-  letter-spacing: 1px;
   color: #cccccc;
 }
 
@@ -756,9 +824,3 @@ body {
 .footer a:hover {
   color: var(--yellow);
 }
-
-li strong {
-  color: #c8c8c8;
-  text-decoration: underline;
-}
-
