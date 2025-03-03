@@ -33,13 +33,12 @@ body::before {
 /* Barre de navigation */
 .navbar {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  width: 100%;  /* Assure que la navbar prend toute la largeur */
+  width: 100%;
   background: var(--black);
-  padding: 1rem 2rem;  /* Réduit la hauteur */
+  padding: 1rem 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: fixed;  /* Fixe la navbar en haut */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -54,13 +53,20 @@ body::before {
 
 /* Alignement du logo */
 .navbar-brand {
-  margin-right: 2rem; /* Ajoute un espacement entre le logo et les liens */
+  margin-right: 20px; /* Ajoute un espacement entre le logo et les liens */
 }
 
-.navbar-brand a {
-  font-size: 2.2rem;
+.navbar-nav a {
   color: var(--yellow);
   text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0 10px; /* Réduit l’espacement interne */
+}
+
+.navbar-nav a:first-child {
+  margin-left: 0; /* Empêche un décalage du premier lien */
 }
 
 .navbar-brand span {
