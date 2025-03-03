@@ -36,123 +36,131 @@
     </div>
   </section>
 
-  <!-- Section Activités au CFA -->
-  <section id="cfa-section" class="cfa-section">
-    <div class="container">
-      <h2 class="title">Activités réalisées au CFA</h2>
-      <ul>
-        <li>
-          <strong>Création d’un réseau virtuel d'entreprise</strong> :
-          <ul>
-            <li><em>Configuration des équipements réseaux et de virtualisation :</em>
-              <ul>
-                <li><strong>Switchs Cisco :</strong>
-                  <ul>
-                    <li>Configuration de base : Définition des VLAN et réglage des ports pour segmenter et organiser le trafic interne.</li>
-                    <li>Gestion avancée : Mise en place de port-security pour limiter l’accès non autorisé.</li>
-                  </ul>
-                </li>
-                <li><strong>Vswitch ESXi :</strong>
-                  <ul>
-                    <li>Création de réseaux virtuels : Déploiement de commutateurs virtuels pour connecter plusieurs machines virtuelles (VM) dans des environnements isolés ou interconnectés.</li>
-                    <li>Optimisation des ressources : Allocation dynamique (CPU, mémoire, bande passante) selon les besoins de chaque VM.</li>
-                  </ul>
-                </li>
-                <li><strong>Pare-feu PfSense et Stormshield :</strong>
-                  <ul>
-                    <li>Installation et configuration en tant que passerelles de sécurité pour filtrer le trafic entrant et sortant.</li>
-                    <li>Mise en place de règles de filtrage spécifiques pour autoriser ou bloquer certains flux de données.</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><em>Création et gestion de machines virtuelles :</em>
-              <ul>
-                <li>Déploiement de systèmes d’exploitation Linux (Ubuntu, CentOS, Debian) et Windows (Windows Server, Windows 10) pour simuler divers environnements.</li>
-                <li>Gestion des ressources et segmentation du réseau via VLAN et sous-réseaux pour garantir une communication sécurisée entre les VM.</li>
-              </ul>
-            </li>
-            <li><em>Déploiement d’Ansible sur Docker :</em>
-              <ul>
-                <li>Conteneurisation d’Ansible pour automatiser le déploiement et la configuration de l'infrastructure.</li>
-                <li>Exécution de playbooks pour standardiser les déploiements et réduire les erreurs manuelles.</li>
-              </ul>
-            </li>
-            <li><em>Déploiement de Snort :</em>
-              <ul>
-                <li>Installation de Snort pour la détection d’intrusions et la surveillance en temps réel du trafic réseau.</li>
-                <li>Configuration de règles personnalisées pour identifier et alerter sur des comportements anormaux ou malveillants.</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Installation et configuration de machines Windows 10</strong> :
-          <ul>
-            <li>Paramétrage réseau (IP statique, DHCP) et configuration des masques, passerelles et DNS.</li>
-            <li>Création et gestion de comptes locaux avec des privilèges personnalisés.</li>
-            <li>Configuration du pare-feu Windows Defender avec des règles spécifiques pour sécuriser le système.</li>
-            <li>Installation et configuration de Sysmon pour une surveillance avancée des événements système.</li>
-            <li>Scripting et automatisation avec PowerShell pour la gestion des tâches récurrentes.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Configuration d’un Active Directory sécurisé et durci</strong> :
-          <ul>
-            <li>Installation des rôles AD DS et DNS pour créer et administrer le domaine.</li>
-            <li>Création d’Unités d’Organisation (OU) pour structurer l’annuaire selon la hiérarchie de l’entreprise.</li>
-            <li>Déploiement de stratégies de groupe (GPO) pour appliquer des politiques de sécurité sur postes et serveurs.</li>
-            <li>Désactivation des protocoles vulnérables (SMBv1, NTLMv1) pour réduire les vecteurs d’attaque.</li>
-            <li>Implémentation de LAPS pour la gestion sécurisée des mots de passe administrateurs locaux.</li>
-            <li>Sécurisation du RDP avec authentification NLA, limitation des connexions et journalisation des accès.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Hébergement de sites web avec Apache</strong> :
-          <ul>
-            <li>Configuration de VirtualHost pour l’hébergement multi-sites sur un même serveur.</li>
-            <li>Création de certificats auto-signés pour activer le protocole HTTPS et sécuriser les échanges.</li>
-            <li>Installation et configuration de ProFTPD pour gérer des accès FTP/FTPS sécurisés.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Mise en place de la solution de support GLPI</strong> :
-          <ul>
-            <li>Liaison LDAPS avec le contrôleur de domaine pour une intégration sécurisée.</li>
-            <li>Import des utilisateurs du domaine afin de simplifier la gestion des tickets et du support IT.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Installation et configuration d'un serveur de sauvegarde Veeam</strong> :
-          <ul>
-            <li>Installation de Veeam Backup & Replication pour la sauvegarde et la réplication des données critiques.</li>
-            <li>Configuration de jobs de sauvegarde programmés et tests de restauration pour assurer la fiabilité.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Haute disponibilité avec HAProxy</strong> :
-          <ul>
-            <li>Configuration du load balancer pour répartir les charges entre plusieurs serveurs.</li>
-            <li>Mise en place d’ACL pour filtrer et rediriger le trafic en fonction de critères définis.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Centralisation des logs et analyse avec un SIEM</strong> :
-          <ul>
-            <li>Configuration d’un serveur Syslog pour collecter les journaux de tous les équipements et applications.</li>
-            <li>Analyse des logs via une plateforme SIEM pour détecter les incidents et déclencher des alertes.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Conteneurisation avec Docker</strong> :
-          <ul>
-            <li>Création de conteneurs pour isoler les services et garantir la cohérence entre les environnements.</li>
-            <li>Déploiement et gestion d’applications via Docker Compose ou autres outils d’orchestration.</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </section>
+<!-- Section Activités au CFA -->
+<section id="cfa-section" class="cfa-section">
+  <div class="container">
+    <h2 class="title">Activités réalisées au CFA</h2>
+    <ul>
+      <li>
+        <strong>Création d’un réseau virtuel d'entreprise</strong> :
+        <ul>
+          <li>
+            <em>Configuration des équipements réseaux et de virtualisation :</em>
+            <ul>
+              <li>
+                <strong>Switchs Cisco :</strong>
+                <ul>
+                  <li>Configuration de base : Définition des VLAN et réglage des ports pour segmenter et organiser le trafic interne.</li>
+                  <li>Gestion avancée : Mise en place de port-security pour limiter l’accès non autorisé.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Vswitch ESXi :</strong>
+                <ul>
+                  <li>Création de réseaux virtuels : Déploiement de commutateurs virtuels pour connecter plusieurs machines virtuelles (VM) dans des environnements isolés ou interconnectés.</li>
+                  <li>Optimisation des ressources : Allocation dynamique (CPU, mémoire, bande passante) selon les besoins de chaque VM.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Pare-feu PfSense et Stormshield :</strong>
+                <ul>
+                  <li>Installation et configuration en tant que passerelles de sécurité pour filtrer le trafic entrant et sortant.</li>
+                  <li>Mise en place de règles de filtrage spécifiques pour autoriser ou bloquer certains flux de données.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Création et gestion de machines virtuelles :</strong>
+                <ul>
+                  <li>Déploiement de systèmes d’exploitation Linux (Ubuntu, CentOS, Debian) et Windows (Windows Server, Windows 10) pour simuler divers environnements.</li>
+                  <li>Gestion des ressources et segmentation du réseau via VLAN et sous-réseaux pour garantir une communication sécurisée entre les VM.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Déploiement d’Ansible sur Docker :</strong>
+                <ul>
+                  <li>Conteneurisation d’Ansible pour automatiser le déploiement et la configuration de l'infrastructure.</li>
+                  <li>Exécution de playbooks pour standardiser les déploiements et réduire les erreurs manuelles.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Déploiement de Snort :</strong>
+                <ul>
+                  <li>Installation de Snort pour la détection d’intrusions et la surveillance en temps réel du trafic réseau.</li>
+                  <li>Configuration de règles personnalisées pour identifier et alerter sur des comportements anormaux ou malveillants.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Installation et configuration de machines Windows 10</strong> :
+            <ul>
+              <li>Paramétrage réseau (IP statique, DHCP) et configuration des masques, passerelles et DNS.</li>
+              <li>Création et gestion de comptes locaux avec des privilèges personnalisés.</li>
+              <li>Configuration du pare-feu Windows Defender avec des règles spécifiques pour sécuriser le système.</li>
+              <li>Installation et configuration de Sysmon pour une surveillance avancée des événements système.</li>
+              <li>Scripting et automatisation avec PowerShell pour la gestion des tâches récurrentes.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Configuration d’un Active Directory sécurisé et durci</strong> :
+            <ul>
+              <li>Installation des rôles AD DS et DNS pour créer et administrer le domaine.</li>
+              <li>Création d’Unités d’Organisation (OU) pour structurer l’annuaire selon la hiérarchie de l’entreprise.</li>
+              <li>Déploiement de stratégies de groupe (GPO) pour appliquer des politiques de sécurité sur postes et serveurs.</li>
+              <li>Désactivation des protocoles vulnérables (SMBv1, NTLMv1) pour réduire les vecteurs d’attaque.</li>
+              <li>Implémentation de LAPS pour la gestion sécurisée des mots de passe administrateurs locaux.</li>
+              <li>Sécurisation du RDP avec authentification NLA et des comptes passerelles, limitation des connexions et journalisation des accès.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Hébergement de sites web avec Apache</strong> :
+            <ul>
+              <li>Configuration de VirtualHost pour l’hébergement multi-sites sur un même serveur.</li>
+              <li>Création de certificats auto-signés pour activer le protocole HTTPS et sécuriser les échanges.</li>
+              <li>Installation et configuration de ProFTPD pour gérer des accès FTP/FTPS sécurisés.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Mise en place de la solution de support GLPI</strong> :
+            <ul>
+              <li>Liaison LDAPS avec le contrôleur de domaine pour une intégration sécurisée.</li>
+              <li>Import des utilisateurs du domaine afin de simplifier la gestion des tickets et du support IT.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Installation et configuration d'un serveur de sauvegarde Veeam</strong> :
+            <ul>
+              <li>Installation de Veeam Backup & Replication pour la sauvegarde et la réplication des données critiques.</li>
+              <li>Configuration de jobs de sauvegarde programmés et tests de restauration pour assurer la fiabilité.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Haute disponibilité avec HAProxy</strong> :
+            <ul>
+              <li>Configuration du load balancer pour répartir les charges entre plusieurs serveurs.</li>
+              <li>Mise en place d’ACL pour filtrer et rediriger le trafic en fonction de critères définis.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Centralisation des logs et analyse avec un SIEM</strong> :
+            <ul>
+              <li>Configuration d’un serveur Syslog pour collecter les journaux de tous les équipements et applications.</li>
+              <li>Analyse des logs via une plateforme SIEM pour détecter les incidents et déclencher des alertes.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Conteneurisation avec Docker</strong> :
+            <ul>
+              <li>Création de conteneurs pour isoler les services et garantir la cohérence entre les environnements.</li>
+              <li>Déploiement et gestion d’applications via Docker Compose ou autres outils d’orchestration.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
 
   <!-- Section Activités en entreprise -->
   <section id="company-section" class="company-section">
