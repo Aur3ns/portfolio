@@ -1,88 +1,227 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Option SISR | Aur3ns Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Option SISR | Aur3ns Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body class="cyberpunk">
-    <div id="particles"></div>
-    <header class="navbar">
-        <div class="navbar-brand">
-            <a href="index.html">Aur<span>3ns</span></a>
-        </div>
-        <nav class="navbar-nav">
-            <a href="sio.html">Le BTS SIO</a>
-            <a href="sisr.html">Option SISR</a>
-            <a href="skills.html">Compétences</a>
-            <a href="projects.html">Projets</a>
-            <a href="veille.html">La Veille Technologique</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <div id="particles"></div>
+  <header class="navbar">
+    <div class="navbar-brand">
+      <a href="index.html">Aur<span>3ns</span></a>
+    </div>
+    <nav class="navbar-nav">
+      <a href="sio.html">Le BTS SIO</a>
+      <a href="sisr.html">Option SISR</a>
+      <a href="skills.html">Compétences</a>
+      <a href="projects.html">Projets</a>
+      <a href="veille.html">La Veille Technologique</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="matrix-border"></div>
-            <h1 class="glitch" data-text="Option SISR">Option SISR</h1>
-            <p class="subtitle">Solutions d'Infrastructure, Systèmes et Réseaux</p>
-            <p>Le BTS SIO, option SISR, forme les étudiants à la conception, l'administration et la sécurisation d'infrastructures réseaux et systèmes. 
-            Cette formation couvre des compétences essentielles telles que la virtualisation, la sécurité réseau, la gestion des serveurs et bien plus encore.</p>
-            <div class="links">
-                <a href="#cfa-section" class="btn">Activités au CFA</a>
-                <a href="#company-section" class="btn">Activités en entreprise</a>
-            </div>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="matrix-border"></div>
+      <h1 class="glitch" data-text="Option SISR">Option SISR</h1>
+      <p class="subtitle">Solutions d'Infrastructure, Systèmes et Réseaux</p>
+      <p>Le BTS SIO, option SISR, forme les étudiants à la conception, l'administration et la sécurisation d'infrastructures réseaux et systèmes. Cette formation couvre des compétences essentielles telles que la virtualisation, la sécurité réseau, la gestion des serveurs et bien plus encore.</p>
+      <div class="links">
+        <a href="#cfa-section" class="btn">Activités au CFA</a>
+        <a href="#company-section" class="btn">Activités en entreprise</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="cfa-section" class="cfa-section">
-        <div class="container">
-            <h2 class="title">Activités réalisées au CFA</h2>
-            <ul>
-                <li><strong>Création d’un réseau virtuel d'entreprise</strong> :
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9lyvqHNPuJakufSNBiqagAtfExGQrUC-sA&s" alt="Cisco" class="illustration">
-                    <ul>
-                        <li>Configuration des switchs Cisco, des Vswitch ESXi, des pare-feu PfSense, et des pare-feu Stormshield.</li>
-                        <li>Création et gestion de machines virtuelles avec différentes distributions Linux et Windows.</li>
-                        <li>Communication et segmentation du réseau entre les VMs.</li>
-                    </ul>
+  <!-- Section Activités au CFA -->
+  <section id="cfa-section" class="cfa-section">
+    <div class="container">
+      <h2 class="title">Activités réalisées au CFA</h2>
+      <ul>
+        <li>
+          <strong>Création d’un réseau virtuel d'entreprise</strong> :
+          <ul>
+            <li><em>Configuration des équipements réseaux et de virtualisation :</em>
+              <ul>
+                <li><strong>Switchs Cisco :</strong>
+                  <ul>
+                    <li>Configuration de base : Définition des VLAN et réglage des ports pour segmenter et organiser le trafic interne.</li>
+                    <li>Gestion avancée : Mise en place de port-security pour limiter l’accès non autorisé.</li>
+                  </ul>
                 </li>
-                <li><strong>Sécurité réseau avec Stormshield</strong> :
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXIQIkXcBpbyUPbDouRQpT0wCg-w0otiqig&s" alt="Stormshield" class="illustration">
-                    <ul>
-                        <li>Installation et configuration de pare-feux Stormshield.</li>
-                        <li>Création de règles de filtrage pour protéger les services internes.</li>
-                        <li>Analyse des journaux de connexion et durcissement des politiques de sécurité.</li>
-                    </ul>
+                <li><strong>Vswitch ESXi :</strong>
+                  <ul>
+                    <li>Création de réseaux virtuels : Déploiement de commutateurs virtuels pour connecter plusieurs machines virtuelles (VM) dans des environnements isolés ou interconnectés.</li>
+                    <li>Optimisation des ressources : Allocation dynamique (CPU, mémoire, bande passante) selon les besoins de chaque VM.</li>
+                  </ul>
                 </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="company-section" class="company-section">
-        <div class="container">
-            <h2 class="title">Activités réalisées en entreprise</h2>
-            <ul>
-                <li><strong>Gestion de switches industriels Hirschmann et Weidmüller</strong> :
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzMclPZWsD_4AjRPUPSp-tXnUaFSUwUChhSw&s" alt="Hirschmann" class="illustration">
-                    <img src="https://media.licdn.com/dms/image/v2/C4D0BAQHkeUpunRWiaQ/company-logo_200_200/company-logo_200_200/0/1649059396123/weidmller_france_logo?e=2147483647&v=beta&t=IOjckcENdcweKkbh4Dtbr5Vmx9WCK0A_gW_E0fbw4XU" alt="Weidmüller" class="illustration">
-                    <ul>
-                        <li>Configuration Réseau VLAN.</li>
-                        <li>Configuration VLAN et port-security.</li>
-                        <li>Configuration SNMP et gestion des accès.</li>
-                        <li>Configuration de la redondance avec la technologie "Turbo Chain" et "Turbo Ring".</li>
-                    </ul>
+                <li><strong>Pare-feu PfSense et Stormshield :</strong>
+                  <ul>
+                    <li>Installation et configuration en tant que passerelles de sécurité pour filtrer le trafic entrant et sortant.</li>
+                    <li>Mise en place de règles de filtrage spécifiques pour autoriser ou bloquer certains flux de données.</li>
+                  </ul>
                 </li>
-            </ul>
-        </div>
-    </section>
+              </ul>
+            </li>
+            <li><em>Création et gestion de machines virtuelles :</em>
+              <ul>
+                <li>Déploiement de systèmes d’exploitation Linux (Ubuntu, CentOS, Debian) et Windows (Windows Server, Windows 10) pour simuler divers environnements.</li>
+                <li>Gestion des ressources et segmentation du réseau via VLAN et sous-réseaux pour garantir une communication sécurisée entre les VM.</li>
+              </ul>
+            </li>
+            <li><em>Déploiement d’Ansible sur Docker :</em>
+              <ul>
+                <li>Conteneurisation d’Ansible pour automatiser le déploiement et la configuration de l'infrastructure.</li>
+                <li>Exécution de playbooks pour standardiser les déploiements et réduire les erreurs manuelles.</li>
+              </ul>
+            </li>
+            <li><em>Déploiement de Snort :</em>
+              <ul>
+                <li>Installation de Snort pour la détection d’intrusions et la surveillance en temps réel du trafic réseau.</li>
+                <li>Configuration de règles personnalisées pour identifier et alerter sur des comportements anormaux ou malveillants.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Installation et configuration de machines Windows 10</strong> :
+          <ul>
+            <li>Paramétrage réseau (IP statique, DHCP) et configuration des masques, passerelles et DNS.</li>
+            <li>Création et gestion de comptes locaux avec des privilèges personnalisés.</li>
+            <li>Configuration du pare-feu Windows Defender avec des règles spécifiques pour sécuriser le système.</li>
+            <li>Installation et configuration de Sysmon pour une surveillance avancée des événements système.</li>
+            <li>Scripting et automatisation avec PowerShell pour la gestion des tâches récurrentes.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Configuration d’un Active Directory sécurisé et durci</strong> :
+          <ul>
+            <li>Installation des rôles AD DS et DNS pour créer et administrer le domaine.</li>
+            <li>Création d’Unités d’Organisation (OU) pour structurer l’annuaire selon la hiérarchie de l’entreprise.</li>
+            <li>Déploiement de stratégies de groupe (GPO) pour appliquer des politiques de sécurité sur postes et serveurs.</li>
+            <li>Désactivation des protocoles vulnérables (SMBv1, NTLMv1) pour réduire les vecteurs d’attaque.</li>
+            <li>Implémentation de LAPS pour la gestion sécurisée des mots de passe administrateurs locaux.</li>
+            <li>Sécurisation du RDP avec authentification NLA, limitation des connexions et journalisation des accès.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Hébergement de sites web avec Apache</strong> :
+          <ul>
+            <li>Configuration de VirtualHost pour l’hébergement multi-sites sur un même serveur.</li>
+            <li>Création de certificats auto-signés pour activer le protocole HTTPS et sécuriser les échanges.</li>
+            <li>Installation et configuration de ProFTPD pour gérer des accès FTP/FTPS sécurisés.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Mise en place de la solution de support GLPI</strong> :
+          <ul>
+            <li>Liaison LDAPS avec le contrôleur de domaine pour une intégration sécurisée.</li>
+            <li>Import des utilisateurs du domaine afin de simplifier la gestion des tickets et du support IT.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Installation et configuration d'un serveur de sauvegarde Veeam</strong> :
+          <ul>
+            <li>Installation de Veeam Backup & Replication pour la sauvegarde et la réplication des données critiques.</li>
+            <li>Configuration de jobs de sauvegarde programmés et tests de restauration pour assurer la fiabilité.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Haute disponibilité avec HAProxy</strong> :
+          <ul>
+            <li>Configuration du load balancer pour répartir les charges entre plusieurs serveurs.</li>
+            <li>Mise en place d’ACL pour filtrer et rediriger le trafic en fonction de critères définis.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Centralisation des logs et analyse avec un SIEM</strong> :
+          <ul>
+            <li>Configuration d’un serveur Syslog pour collecter les journaux de tous les équipements et applications.</li>
+            <li>Analyse des logs via une plateforme SIEM pour détecter les incidents et déclencher des alertes.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Conteneurisation avec Docker</strong> :
+          <ul>
+            <li>Création de conteneurs pour isoler les services et garantir la cohérence entre les environnements.</li>
+            <li>Déploiement et gestion d’applications via Docker Compose ou autres outils d’orchestration.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 | Created by Aur3ns, ex BlackBird63030</p>
-    </footer>
+  <!-- Section Activités en entreprise -->
+  <section id="company-section" class="company-section">
+    <div class="container">
+      <h2 class="title">Activités réalisées en entreprise</h2>
+      <ul>
+        <li>
+          <strong>Sécurité réseau avec Stormshield</strong> :
+          <ul>
+            <li>Installation et configuration de pare-feux Stormshield pour protéger le périmètre du réseau.</li>
+            <li>Création de règles de filtrage pour autoriser uniquement le trafic légitime vers les services internes.</li>
+            <li>Analyse des journaux de connexion et ajustement des politiques de sécurité.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Gestion de switches industriels</strong> :
+          <ul>
+            <li><em>Configuration Réseau et VLAN :</em> Mise en place de VLAN pour segmenter le trafic et garantir la performance.</li>
+            <li><em>Port-Security et Authentification 802.1x :</em> Application du protocole 802.1x pour sécuriser l'accès aux switches.</li>
+            <li><em>Configuration SNMP :</em> Activation et paramétrage de SNMP pour la surveillance et la gestion à distance.</li>
+            <li><em>Redondance et fiabilité :</em> Mise en place de technologies telles que Moxa "Turbo Chain", "Turbo Ring" et la configuration de switches industriels Weidmuller pour assurer la continuité du service.</li>
+            <li><em>Liste des Switchs Industriels :</em>
+              <ul>
+                <li>Moxa</li>
+                <li>Hirschmann</li>
+                <li>Weidmuller</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Administration de services Active Directory</strong> :
+          <ul>
+            <li>Gestion des utilisateurs et groupes dans l’AD (création, mise à jour, suppression).</li>
+            <li>Application des politiques de sécurité via GPO pour contrôler l’accès aux ressources.</li>
+            <li>Déploiement de LAPS pour renforcer la sécurité des comptes administrateurs locaux.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Mise en place du logiciel de supervision Panorama</strong> :
+          <ul>
+            <li>Installation des drivers requis pour assurer la communication avec les équipements supervisés.</li>
+            <li>Mise à jour applicative et de sécurité pour garantir performance et fiabilité.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Génération de certificats OpenSSL</strong> :
+          <ul>
+            <li>Création de certificats pour une PKI afin d’authentifier et chiffrer les communications entre équipements.</li>
+            <li>Fusion de clé et de certificats pour obtenir une extension compatible avec les switchs industriels.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Configuration et supervision grâce à PRTG</strong> :
+          <ul>
+            <li>Ajout des appareils du réseau dans l’interface PRTG pour une vue d'ensemble.</li>
+            <li>Configuration des capteurs SNMP et WMI pour surveiller le trafic, la latence et l’état des systèmes.</li>
+            <li>Création de schémas (maps) du réseau pour faciliter la visualisation et la gestion.</li>
+            <li>Liaison LDAPS pour sécuriser l’authentification et centraliser la gestion des accès.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <footer class="footer">
+    <p>&copy; 2025 | Created by Aur3ns, ex BlackBird63030</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
