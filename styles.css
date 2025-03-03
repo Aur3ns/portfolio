@@ -16,11 +16,12 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
-  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   line-height: 1.6; /* Meilleure lisibilité */
   display: block; /* Évite les problèmes de flexbox */
-  overflow-x: hidden; /* Empêche les débordements */
 }
 
 /* Empêcher la navbar de cacher le contenu */
@@ -40,7 +41,6 @@ body::before {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 1000;
 }
 
