@@ -48,16 +48,18 @@ body::before {
 
 /* Correction du logo */
 .navbar-brand {
-  margin-right: 40px; /* Ajoute un espace entre le logo et le menu */
-  flex-shrink: 0; /* Empêche que le logo soit trop compressé */
+  margin-right: 40px; /* Espacement entre le logo et les liens */
+  flex-shrink: 0;
 }
 
-/* Correction de l'alignement du menu */
+/* Correction du menu pour le coller à gauche */
 .navbar-nav {
   display: flex;
-  gap: 1rem; /* Réduction de l'espace entre les liens */
+  gap: 1rem; /* Réduit l’espace entre les liens */
   flex-grow: 1;
-  justify-content: flex-start; /* Alignement à gauche */
+  justify-content: flex-start; /* Forcer tout à gauche */
+  margin-left: 0; /* Évite un décalage */
+  padding-left: 0; /* S'assure qu'il n'y a pas de marge interne */
 }
 
 /* Liens de navigation */
@@ -66,11 +68,7 @@ body::before {
   text-decoration: none;
   font-size: 1.5rem;
   transition: color 0.3s ease;
-  padding: 0 5px; /* Réduit encore l’espacement */
-}
-
-.navbar-nav a:first-child {
-  margin-left: 0; /* Empêche un décalage du premier lien */
+  padding: 0 10px; /* Espacement réduit */
 }
 
 /* Effet hover */
