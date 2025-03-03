@@ -629,7 +629,7 @@ body::before {
 }
 
 /* projects section */
-
+/* Section projets */
 .projects-section {
   padding: 5rem 2rem;
   background: rgba(0, 0, 0, 0.9);
@@ -644,61 +644,95 @@ body::before {
   text-shadow: 0 0 10px var(--yellow), 0 0 20px rgba(255, 255, 0, 0.7);
 }
 
+/* Conteneur des projets */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Augmenté à 350px pour un meilleur rendu */
   gap: 2rem;
   padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Cartes des projets */
 .project-card {
   background: rgba(0, 0, 0, 0.8);
   border: 2px solid var(--green);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+  text-align: left; /* Alignement du texte pour plus de lisibilité */
+  min-height: 550px; /* Assure une hauteur cohérente pour éviter les décalages */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* Effet au survol */
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px var(--green), 0 0 30px var(--blue);
 }
 
+/* Titres des projets */
 .project-card h2 {
   font-size: 1.5rem;
   color: var(--yellow);
   margin-bottom: 1rem;
+  text-align: center;
 }
 
+/* Texte descriptif */
 .project-card p {
   font-size: 1rem;
   color: var(--text-color);
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
+/* Images des projets */
 .project-card img {
-  width: 100%; /* L'image prend toute la largeur du cadre */
-  height: auto; /* Hauteur ajustée proportionnellement */
-  max-height: 250px; /* Limite la hauteur pour éviter les débordements */
-  object-fit: contain; /* Garantit que l'image reste entière sans être rognée */
-  border-radius: 10px; /* Coins arrondis pour l'esthétique */
+  width: 100%;
+  height: auto;
+  max-height: 230px; /* Ajusté pour éviter les débordements */
+  object-fit: contain; /* L'image reste entière et proportionnée */
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
+/* Bouton vers la documentation officielle */
 .project-link {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   background: var(--pink);
   color: var(--black);
   border-radius: 5px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .project-link:hover {
   background: var(--yellow);
   color: var(--black);
   box-shadow: 0 0 10px var(--yellow);
+}
+
+/* Liste des tâches techniques */
+.skills-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list li {
+  font-size: 1rem;
+  color: var(--green);
+  margin-bottom: 0.5rem;
 }
 
 
