@@ -32,21 +32,26 @@ body::before {
 }
 
 /* Barre de navigation */
-/* Barre de navigation */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  width: 100%;
   background: var(--black);
   padding: 1rem 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
 }
 
+/* Alignement du logo */
+.navbar-brand {
+  margin-right: 20px; /* Réduit l’espace entre le logo et les liens */
+}
+
 .navbar-brand a {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: var(--yellow);
   text-decoration: none;
 }
@@ -55,19 +60,29 @@ body::before {
   color: var(--pink);
 }
 
+/* Conteneur des liens de navigation */
 .navbar-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
+  flex-grow: 1;
+  justify-content: flex-start;
 }
 
+/* Liens de navigation */
 .navbar-nav a {
   color: var(--yellow);
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
   transition: color 0.3s ease;
+  padding: 0 10px; /* Réduit l’espacement interne */
 }
 
+.navbar-nav a:first-child {
+  margin-left: 0; /* Empêche un décalage du premier lien */
+}
+
+/* Effet hover */
 .navbar-nav a:hover {
   color: var(--green);
 }
@@ -84,6 +99,7 @@ body::before {
 .navbar-nav a:hover::after {
   width: 100%;
 }
+
 
 /* S'assurer que tout est bien centré et ne dépasse pas */
 .hero, .realisation-e5, .footer {
